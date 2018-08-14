@@ -35,10 +35,10 @@ set laststatus=2
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" Set color scheme
+colorscheme solarized
+
 " use Solarized colorscheme for status line
 let g:lightline = { 'colorscheme': 'solarized' }
-
-" use Solarized colorscheme for editor
-colorscheme solarized                                      
 
 filetype plugin on
