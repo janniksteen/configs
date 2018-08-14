@@ -1,0 +1,44 @@
+" Set tab width
+set tabstop=2
+
+" Do not behave like vi
+set nocompatible                                           
+
+" Set 256 term color mode
+if !has('gui_running')
+  set t_Co=256                                               
+endif
+	
+" Do not show editor mode
+set noshowmode
+
+" Auto save files
+set autowrite
+"  Highlight the line where the text cursor is
+set cursorline
+" Highlight matches when running a search
+set hlsearch
+" Add a colored column at 80
+set colorcolumn=80
+" Show Matching Parenthesis
+set showmatch
+" Map <leader>s as reload vim config
+map <leader>s :source ~/.vimrc<CR>
+" Turn on syntax highlighting                                      
+syntax on  
+" Set back ground color                                                
+set background=dark " dark | light "                       
+" Always show the statusbar
+set laststatus=2
+
+" Load plugins
+runtime bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+" use Solarized colorscheme for status line
+let g:lightline = { 'colorscheme': 'solarized' }
+
+" use Solarized colorscheme for editor
+colorscheme solarized                                      
+
+filetype plugin on

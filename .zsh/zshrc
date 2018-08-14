@@ -1,0 +1,22 @@
+BASE=$HOME/.zsh
+source $BASE/antigen/antigen.zsh
+
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=false
+
+antigen use oh-my-zsh
+
+antigen bundle joel-porquet/zsh-dircolors-solarized.git
+antigen bundle docker
+antigen bundle tmux 
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle chrissicool/zsh-256color
+antigen bundle zlsun/solarized-man
+
+antigen theme gentoo 
+
+antigen apply
+
+export EDITOR=vim
+export GOPATH=~/development/private/go-projects
