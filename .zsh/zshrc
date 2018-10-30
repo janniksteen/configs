@@ -13,10 +13,17 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle chrissicool/zsh-256color
 antigen bundle zlsun/solarized-man
+antigen bundle zsh-users/zsh-completions
 
 antigen theme gentoo 
 
 antigen apply
 
+export PATH=$PATH:~/bin:/opt/openoffice4/program:/opt/apache-maven-3.5.2/bin:/opt/groovy-2.4.7/bin:/opt/node-v6.9.1-linux-x64/bin:/usr/local/go/bin:/opt/apache-ant-1.10.5/bin
+
 export EDITOR=vim
 export GOPATH=~/development/private/go-projects
+
+source ~/.bash_aliases
+
+eval "$(jira --completion-script-zsh)"
