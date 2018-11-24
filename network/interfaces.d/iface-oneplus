@@ -1,0 +1,3 @@
+iface oneplus inet dhcp
+        wpa-conf /etc/wpa_supplicant/oneplus_wpa_supplicant.conf
+

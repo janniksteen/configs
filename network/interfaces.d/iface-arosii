@@ -1,0 +1,3 @@
+iface arosii inet dhcp
+        wpa-conf /etc/wpa_supplicant/arosii_wpa_supplicant.conf
+

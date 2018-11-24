@@ -1,0 +1,3 @@
+iface auth inet dhcp
+        wpa-driver wired
+        wpa-conf /etc/wpa_supplicant/arosii1x_wpa_supplicant.conf
