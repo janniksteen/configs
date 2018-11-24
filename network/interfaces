@@ -7,37 +7,4 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-# Wired interfaces 
-iface noauth inet dhcp
-
-iface auth inet dhcp
-	wpa-driver wired
-	wpa-conf /etc/wpa_supplicant/arosii1x_wpa_supplicant.conf
-
-iface sg135setup inet static
-  address 192.168.0.253/24
-  gateway 192.168.0.1
- 
-# Wireless interfaces
-iface skynet inet dhcp 
-	wpa-conf /etc/wpa_supplicant/skynet_wpa_supplicant.conf
-
-iface blackgate inet dhcp
-	wpa-conf /etc/wpa_supplicant/blackgate_wpa_supplicant.conf
-
-iface arosii inet dhcp
-	wpa-conf /etc/wpa_supplicant/arosii_wpa_supplicant.conf
-
-iface oneplus inet dhcp
-	wpa-conf /etc/wpa_supplicant/oneplus_wpa_supplicant.conf
-
-iface regmidt inet dhcp
-	wpa-conf /etc/wpa_supplicant/RegionMIDT-Gaest_wpa_supplicant.conf
-
-iface norregaardsalle134 inet dhcp
-  wpa-conf /etc/wpa_supplicant/norregaardsalle134_wpa_supplicant.conf
-
-iface happycamper inet dhcp
-  wpa-conf /etc/wpa_supplicant/happycamper_wpa_supplicant.conf
-
 iface default inet dhcp
