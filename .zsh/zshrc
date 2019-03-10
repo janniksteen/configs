@@ -24,6 +24,8 @@ export PATH=$PATH:~/bin:/opt/openoffice4/program:/opt/apache-maven-3.5.2/bin:/op
 export EDITOR=vim
 export GOPATH=~/development/private/go-projects
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 source ~/.bash_aliases
 
 eval "$(jira --completion-script-zsh)"
