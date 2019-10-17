@@ -1,0 +1,3 @@
+iface line inet dhcp
+        wpa-conf /etc/wpa_supplicant/line_wpa_supplicant.conf
+
