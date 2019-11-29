@@ -1,0 +1,9 @@
+# /etc/zsh/zprofile: system-wide .zprofile file for zsh(1).
+#
+# This file is sourced only for login shells (i.e. shells
+# invoked with "-" as the first character of argv[0], and
+# shells invoked with the -l flag.)
+#
+# Global Order: zshenv, zprofile, zshrc, zlogin
+#
+path+=('/opt/openoffice4/program:/opt/apache-maven-3.6.3/bin:/opt/groovy-2.4.7/bin:/opt/node-v6.9.1-linux-x64/bin:/usr/local/go/bin:/opt/apache-ant-1.10.5/bin:/home/jns/bin:/home/jns/bin/firefox')
